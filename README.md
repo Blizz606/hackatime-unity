@@ -12,7 +12,29 @@ Editor-only Hackatime/WakaTime-compatible time tracking for Unity 2022.3 LTS and
 
 ## Installation
 
-In Unity, open **Window → Package Manager**, select **+ → Add package from Git URL**, and enter the GitHub URL for this repository.
+### Install from GitHub
+
+1. Open the target Unity project.
+2. Select **Window → Package Manager**.
+3. Click **+** in the Package Manager's upper-left corner.
+4. Choose **Add package from Git URL…**.
+5. Paste the repository URL and click **Add**:
+
+   ```text
+   https://github.com/Blizz606/hackatime-unity.git
+   ```
+
+Unity downloads the package and makes **Window → Hackatime** available. No files need to be copied into `Assets`.
+
+### Install a specific version
+
+After the first release tag, use a tag to keep the installed version fixed:
+
+```text
+https://github.com/Blizz606/hackatime-unity.git#v1.0.0
+```
+
+To update later, open Package Manager, select **Hackatime for Unity**, and use the available update action. For an untagged Git URL, Unity uses the latest commit on the repository's default branch.
 
 ## Setup
 
